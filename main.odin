@@ -27,8 +27,8 @@ main :: proc() {
 	defer mem.tracking_allocator_destroy(&track)
 	context.allocator = mem.tracking_allocator(&track)
 
-	img, err := load_digit_png()
-	if err != nil {
+	img, load_png_err := load_digit_png()
+	if load_png_err != nil {
 		fmt.eprint("Could not load the image.")
 	}
 
