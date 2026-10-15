@@ -1,0 +1,7 @@
+package main
+
+INPUT_SIZE :: 704
+HIDDEN_SIZE :: 100
+OUTPUT_SIZE :: 10
+
+TRAINING_EPOCHS :: 10
